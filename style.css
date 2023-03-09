@@ -1,0 +1,71 @@
+/* Raiz del documento */
+:root {
+    --fonts-primary: 'Michroma', sans-serif;;
+    --color-background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .5)), url(https://www.elnacional.cat/uploads/s1/37/48/64/19/programador.png);
+    --color-background-secondary: rgba(153, 22, 5, .5);
+    --color-background-terceary: #d98585;
+    --color-background-fourth: #cf4545;
+    --color-fonts: #2fd216;
+}
+/* Estilos generales */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: var(--color-background);
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+/* Estilos especificos */
+ .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.button {
+    padding: 5px 15px;
+    border-radius: 3px;
+    color: var(--color-fonts);      
+    font-size: 0.9rem;
+    text-shadow: 1px 1px 2px #14145f;
+    background-color: var(--color-background-secondary);
+    box-shadow: 0px 2px 5px rgba(147, 151, 131, 0.5);
+    transition: .2s;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: var(--color-background-terceary);
+}
+.button:active {
+    background-color: var(--color-background-fourth);
+    scale: 0.95;
+}
+.contain {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.container__hour {
+    font-family: var(--fonts-primary);
+    color: var(--color-fonts);      
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+.container__date {
+    font-family: var(--fonts-primary);
+    color: var(--color-fonts);      
+    font-size: 0.6rem;
+    margin: auto;
+    text-align: center;
+}
+.visibility {
+    display: none;
+}
